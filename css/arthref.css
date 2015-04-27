@@ -1,0 +1,378 @@
+
+/* Wobble Vertical */
+@-webkit-keyframes wobble-vertical {
+    16.65% {
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+    }
+
+    33.3% {
+        -webkit-transform: translateY(-6px);
+        transform: translateY(-6px);
+    }
+
+    49.95% {
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+    }
+
+    66.6% {
+        -webkit-transform: translateY(-2px);
+        transform: translateY(-2px);
+    }
+
+    83.25% {
+        -webkit-transform: translateY(1px);
+        transform: translateY(1px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes wobble-vertical {
+    16.65% {
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+    }
+
+    33.3% {
+        -webkit-transform: translateY(-6px);
+        transform: translateY(-6px);
+    }
+
+    49.95% {
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+    }
+
+    66.6% {
+        -webkit-transform: translateY(-2px);
+        transform: translateY(-2px);
+    }
+
+    83.25% {
+        -webkit-transform: translateY(1px);
+        transform: translateY(1px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+.social-title{
+    font-size: 12px;
+    color: #ccc;
+}
+.arthref{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 4000;
+}
+.arthref .overlay{
+	z-index: 100;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	background: rgba(0, 0, 0, 0.8);
+	pointer-events: none;
+	display: none;
+
+	-webkit-transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
+	-ms-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
+}
+.arthref .opaque{
+	background: rgba(0, 0, 0, 0.8) !important;
+}
+.arthref .overlay.active{
+	opacity: 1;
+	pointer-events: all;
+}
+.arthref .icon-container{
+	z-index: 101;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	text-align: center;
+}
+.arthref .icon-container:before{
+	content: '';
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.arthref .icon-container .centered{
+	display: inline-block;
+	padding: 1em;
+	vertical-align: middle;
+	text-align: left;
+	width: 90%;
+	max-width: 725px;
+}
+.arthref .icon-container ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+	opacity: 0;
+	
+	-webkit-transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
+	-ms-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
+	
+	pointer-events: none;
+}
+.arthref .icon-container ul.active{
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.arthref .icon-container ul li{
+	display: inline-block;
+	width: 80px;
+    height: 110px;
+
+	margin: 10px;
+}
+.arthref .icon-container ul li a{
+	background-color: #617385;
+	-moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    display: block;
+    width: 80px;
+	height: 80px;
+	margin: 0 0 6px 0;
+    font-family:'Roboto',sans-serif;
+    font-weight:400;
+}
+
+.arthref .icon-container ul li a:hover > i {
+    -webkit-animation-name: wobble-vertical;
+    animation-name: wobble-vertical;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+.arthref .icon-container ul li i{
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-size: 32px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #fff;
+    line-height: 80px
+
+}
+
+.arthref .icon-container ul li a.aApple i:before{ content: "\f179"; }
+.arthref .icon-container ul li a.aMySpace i:before{}
+.arthref .icon-container ul li a.aBlackBerry i:before{}
+.arthref .icon-container ul li a.aWikipedia i:before{}
+.arthref .icon-container ul li a.aEMail i:before{ content: "\f0e0"; }
+.arthref .icon-container ul li a.aWordpress i:before{ content: "\f19a"; }
+.arthref .icon-container ul li a.aDeviantArt i:before{content: "\f1bd";}
+
+.arthref .icon-container ul li a.aForrst i:before{}
+.arthref .icon-container ul li a.aTechnorati i:before{}
+.arthref .icon-container ul li a.aXBox i:before{}
+.arthref .icon-container ul li a.aAndroid i:before{}
+.arthref .icon-container ul li a.aEvernote i:before{}
+.arthref .icon-container ul li a.aZerply i:before{}
+.arthref .icon-container ul li a.aXing i:before{}
+
+.arthref .icon-container ul li a.aVimeo i:before{ content: "\f194";}
+.arthref .icon-container ul li a.aTumblr i:before{ content: "\f173"; }
+.arthref .icon-container ul li a.aFacebook i:before{ content: "\f09a"; }
+.arthref .icon-container ul li a.aDigg i:before{ content: "\f1a6"; }
+.arthref .icon-container ul li a.aDelicious i:before{  content: "\f1a5"; }
+.arthref .icon-container ul li a.aFriendFeed i:before{}
+.arthref .icon-container ul li a.aLinkedIn i:before{ content: "\f0e1"; }
+
+.arthref .icon-container ul li a.aPaypal i:before{  content: "\f1ed"; }
+.arthref .icon-container ul li a.aBehance i:before{ content: "\f1b4"; }
+.arthref .icon-container ul li a.aFoursquare i:before{content: "\f180";}
+.arthref .icon-container ul li a.aWindows i:before{ content: "\f17a";}
+.arthref .icon-container ul li a.aSkype i:before{ content: "\f17e";}
+.arthref .icon-container ul li a.aTwitter i:before{ content: "\f099"; }
+.arthref .icon-container ul li a.aPosterous i:before{}
+
+.arthref .icon-container ul li a.aLastFm i:before{}
+.arthref .icon-container ul li a.aQuora i:before{}
+.arthref .icon-container ul li a.aYouTube i:before{ content: "\f167"; }
+.arthref .icon-container ul li a.aPinterest i:before{content: "\f0d2";}
+.arthref .icon-container ul li a.aPath i:before{}
+.arthref .icon-container ul li a.aGooglePlus i:before{ content: "\f0d5"; }
+.arthref .icon-container ul li a.aFlud i:before{}
+
+.arthref .icon-container ul li a.aStumbleUpon i:before{ content: "\f1a4"; }
+.arthref .icon-container ul li a.aReddit i:before{content: "\f1a1";}
+.arthref .icon-container ul li a.aRSS i:before{ content: "\f09e";}
+.arthref .icon-container ul li a.aScoutzie i:before{}
+.arthref .icon-container ul li a.aBlogger i:before{}
+.arthref .icon-container ul li a.aGrovershark i:before{}
+.arthref .icon-container ul li a.aAIM i:before{}
+
+.arthref .icon-container ul li a.aYahoo i:before{}
+.arthref .icon-container ul li a.aFlickr i:before{ content: "\f16e"; }
+.arthref .icon-container ul li a.aDribbble i:before,
+.arthref .icon-container ul li a.aDribble i:before{ content: "\f17d"; }
+.arthref .icon-container ul li a.aInstagram i:before{  content: "\f16d";}
+
+/* */
+.arthref .icon-container ul li a.aApple{ background-color: #272727; }
+.arthref .icon-container ul li a.aMySpace{ background-color: #272727; }
+.arthref .icon-container ul li a.aBlackBerry{ background-color: #2c2c2c; }
+.arthref .icon-container ul li a.aWikipedia{ background-color: #303030; }
+.arthref .icon-container ul li a.aEMail{ background-color: #434343; }
+.arthref .icon-container ul li a.aWordpress{ background-color: #444; }
+.arthref .icon-container ul li a.aDeviantArt{ background-color: #40504c; }
+
+.arthref .icon-container ul li a.aForrst{ background-color: #254619; }
+.arthref .icon-container ul li a.aTechnorati{ background-color: #48aa26; }
+.arthref .icon-container ul li a.aXBox{ background-color: #61a500; }
+.arthref .icon-container ul li a.aAndroid{ background-color: #8acd16; }
+.arthref .icon-container ul li a.aEvernote{ background-color: #78ba4e; }
+.arthref .icon-container ul li a.aZerply{ background-color: #99bd67; }
+.arthref .icon-container ul li a.aXing{ background-color: #036567; }
+
+.arthref .icon-container ul li a.aVimeo{ background-color: #627486; }
+.arthref .icon-container ul li a.aTumblr{ background-color: #365471; }
+.arthref .icon-container ul li a.aFacebook{ background-color: #3b5998; }
+.arthref .icon-container ul li a.aDigg{ background-color: #1b5891; }
+.arthref .icon-container ul li a.aDelicious{ background-color: #3274d1; }
+.arthref .icon-container ul li a.aFriendFeed{ background-color: #5e94d6; }
+.arthref .icon-container ul li a.aLinkedIn{ background-color: #2086bc; }
+
+.arthref .icon-container ul li a.aPaypal{ background-color: #478fda; }
+.arthref .icon-container ul li a.aBehance{ background-color: #0d8af8; }
+.arthref .icon-container ul li a.aFoursquare{ background-color: #17a4d7; }
+.arthref .icon-container ul li a.aWindows{ background-color: #22aee7; }
+.arthref .icon-container ul li a.aSkype{ background-color: #00aff0; }
+.arthref .icon-container ul li a.aTwitter{ background-color: #00b6f3;  }
+.arthref .icon-container ul li a.aPosterous{ background-color: #8ab4cd; }
+
+.arthref .icon-container ul li a.aLastFm{ background-color: #b70300; }
+.arthref .icon-container ul li a.aQuora{ background-color: #c21d11; }
+.arthref .icon-container ul li a.aYouTube{ background-color: #c8312b; }
+.arthref .icon-container ul li a.aPinterest{ background-color: #cb2027; }
+.arthref .icon-container ul li a.aPath{ background-color: #bf3119;}
+.arthref .icon-container ul li a.aGooglePlus{ background-color: #cf4231;  }
+.arthref .icon-container ul li a.aFlud{ background-color: #ff503e; }
+
+.arthref .icon-container ul li a.aStumbleUpon{ background-color: #eb4924; }
+.arthref .icon-container ul li a.aReddit{ background-color: #ff500f; }
+.arthref .icon-container ul li a.aRSS{ background-color: #ff7722; }
+.arthref .icon-container ul li a.aScoutzie{ background-color: #f87242; }
+.arthref .icon-container ul li a.aBlogger{ background-color: #fc9c4a; }
+.arthref .icon-container ul li a.aGrovershark{ background-color: #fca204; }
+.arthref .icon-container ul li a.aAIM{ background-color: #ffba00; }
+
+.arthref .icon-container ul li a.aYahoo{ background-color: #640e6b; }
+.arthref .icon-container ul li a.aFlickr{ background-color: #ff0084; }
+.arthref .icon-container ul li a.aDribbble,
+.arthref .icon-container ul li a.aDribble{ background-color: #ff0084; }
+.arthref .icon-container ul li a.aInstagram{ background-color: #723f2d; }
+
+
+/* Animations */
+.arthref .launchpad .icon-container ul{
+	-webkit-transform-origin: center 20%;
+	-webkit-transform: scale(0.8);
+	
+	-moz-transform-origin: center 20%;
+	-moz-transform: scale(0.8);
+
+	-o-transform-origin: center 20%;
+	-o-transform: scale(0.8);
+
+	-ms-transform-origin: center 20%;
+	-ms-transform: scale(0.8);
+
+	transform-origin: center 20%;
+	transform: scale(0.8);
+}
+.arthref .launchpad.active .icon-container ul{
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+
+.arthref .launchpadReverse .icon-container ul{
+	-webkit-transform-origin: center 20%;
+	-webkit-transform: scale(1.2);
+	
+	-moz-transform-origin: center 20%;
+	-moz-transform: scale(1.2);
+
+	-o-transform-origin: center 20%;
+	-o-transform: scale(1.2);
+
+	-ms-transform-origin: center 20%;
+	-ms-transform: scale(1.2);
+
+	transform-origin: center 20%;
+	transform: scale(1.2);
+}
+.arthref .launchpadReverse.active .icon-container ul{
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+
+.arthref .slideTop{
+	top: -100%;
+}
+.arthref .slideTop.active{
+	top: 0; 
+}
+.arthref .slideRight{
+	left: 100%;
+}
+.arthref .slideRight.active{
+	left: 0; 
+}
+.arthref .slideBottom{
+	top: 100%;
+}
+.arthref .slideBottom.active{
+	top: 0; 
+}
+.arthref .slideLeft{
+	left: -100%;
+}
+.arthref .slideLeft.active{
+	left: 0; 
+}
+.arthref .chain .icon-container ul li{
+	opacity: 0;
+}
+.blurred{
+	-webkit-transition: -webkit-filter 300ms ease-in-out;
+	-moz-transition: -moz-filter 300ms ease-in-out;
+	-o-transition: -o-filter 300ms ease-in-out;
+	-ms-transition: -ms-filter 300ms ease-in-out;
+	transition: filter 300ms ease-in-out;
+	-webkit-filter: blur(15px); 
+}

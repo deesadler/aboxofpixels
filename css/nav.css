@@ -1,0 +1,310 @@
+/*=DROPDOWN MENU=*/
+.nav-wrapper{
+    min-height: 60px;
+    background-color: #16989d;
+    text-align: right;
+    z-index: 2000;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+
+}
+
+
+.sf-menu{
+    display:inline-block;
+    z-index: 9999;
+
+}
+.sf-menu, .sf-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.sf-menu li {
+    position: relative;
+}
+
+.sf-menu ul {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    z-index: 99;
+}
+.sf-menu ul li {
+    text-align: left;
+}
+
+.sf-menu > li {
+    display: inline-block;
+}
+.sf-menu > li > a{
+    line-height: 60px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+}
+.sf-menu li:hover > ul,
+.sf-menu li.sfHover > ul {
+    display: block;
+}
+
+.sf-menu a {
+    display: block;
+    position: relative;
+}
+.sf-menu ul ul {
+    top: -24px;
+    left: 100%;
+}
+
+/*==bottom position==*/
+.nav-fixed.position-bottom .sf-menu ul{
+    top: auto;
+    bottom: 100%;
+}
+
+.nav-fixed.position-bottom  .sf-menu ul ul {
+    top: auto;
+    bottom:0;
+    margin-top: -2px;
+}
+
+
+/*** SKIN ***/
+.sf-menu ul {
+    /*box-shadow: 0px 2px 3px rgba(0,0,0,.1);*/
+    min-width: 12em;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom:#444 3px solid;
+    border-left:0px;
+    border-right:0px;
+    margin-top: 0px;
+    background-color: #f5f5f5;
+
+}
+.sf-menu a {
+    padding: .75em  1em;
+    text-decoration: none;
+    color: #666666;
+}
+
+.sf-menu > li > a {
+    padding: 0px  1em;
+    text-decoration: none;
+    color: #fff;
+}
+
+.sf-menu > li > a:hover,.sf-menu li.sfHover > a {
+    background-color:#f5f5f5;
+    color: #16989d;
+
+}
+.sf-menu ul li.sfHover > a{
+    background-color:#444;
+    color: #16989d;
+
+}
+.sf-menu > li:hover > a:before  {
+    content: '';
+    height: 5px;
+    width: 100%;
+    display: block;
+    background-color: #16989d;
+    position: absolute;
+    top: -5px;
+    left: 0;
+
+}
+
+
+.nav-fill .sf-menu li {
+    white-space: nowrap;
+    -webkit-transition: background .2s;
+    transition: background .2s;
+
+}
+
+.nav-fill .sf-menu > li > a:hover, .nav-fill .sf-menu > li.sfHover > a,.sf-menu > li.current{
+    -webkit-box-shadow: inset 0 3px 0px #16989d;
+    -moz-box-shadow: inset 0 3px 0px #16989d;
+    box-shadow: inset 0 3px 0px #16989d;
+}
+.nav-fill{
+    background: #f9f9f9;
+}
+.nav-fill .sf-menu ul li,.nav-fill .sf-menu ul ul li,.nav-fill .sf-menu li:hover,
+.nav-fill .sf-menu li.sfHover  {
+    background: rgba(255,255,255,.95);
+
+}
+
+.nav-fill .sf-menu li:hover,
+.nav-fill .sf-menu li.sfHover {
+    -webkit-transition: none;
+    transition: none;
+}
+
+
+.sf-menu li.current,.sf-menu li.current > a, .sf-menu a:hover, .nav-fill .sf-menu > li.sfHover > a, .nav-fill .sf-menu > li.sfHover  li.sfHover > a,.nav-fill .sf-menu > li > a:hover{
+    color: #fff;
+    background-color: #444;
+}
+/*==Transparent==*/
+
+.nav-nofill, .nav-nofill .sf-menu > li, .nav-nofill .sf-menu > li:hover,
+.nav-nofill .sf-menu > li.sfHover {
+    background: transparent;
+}
+.nav-nofill  .sf-menu ul li,.nav-nofill  .sf-menu ul ul li,.nav-nofill  .sf-menu > li ul li:hover,
+.nav-nofill .sf-menu > li ul li.sfHover {
+    background: #fff;
+}
+
+
+.sf-arrows .sf-with-ul {
+    padding-right: 2.5em;
+
+}
+
+.sf-arrows .sf-with-ul:after {
+    content: '\f107';
+    font-family: 'FontAwesome';
+    position: absolute;
+    right: 1.5em;
+    height: 0;
+    width: 0;
+    color: #fff;
+
+}
+.sf-menu li.current .sf-with-ul:after{
+    color: #16989d;
+}
+.sf-arrows > li > .sf-with-ul:focus:after,
+.sf-arrows > li:hover > .sf-with-ul:after,
+.sf-arrows > .sfHover > .sf-with-ul:after {
+    color: #16989d;
+
+
+}
+.sf-arrows ul .sf-with-ul:after {
+    content: '\f105';
+    font-family: 'FontAwesome';
+    color: #666;
+    top: 10px;
+
+
+}
+.sf-arrows > ul > li > a.sf-with-ul:after {
+    content: '\f105';
+    font-family: 'FontAwesome';
+    color: #fff;
+    top:0px;
+
+
+
+}
+
+.sf-arrows .sf-menu > li > a.sf-with-ul:after {
+    content: '\f107';
+    font-family: 'FontAwesome';
+    color: #fff;
+    top:0px;
+
+
+
+}
+.sf-arrows ul li > .sf-with-ul:focus:after,
+.sf-arrows ul li:hover > .sf-with-ul:after,
+.sf-arrows ul .sfHover > .sf-with-ul:after {
+    color: #16989d;
+
+}
+
+
+.sf-menu a,.sf-menu a:hover,.nav-fill .sf-menu > li > a:hover, .nav-fill .sf-menu > li.sfHover > a,.sf-menu li.current,.sf-menu li.current, .sf-menu a:hover, .nav-fill .sf-menu > li.sfHover > a, .nav-fill .sf-menu > li.sfHover  li.sfHover > a,.nav-fill .sf-menu > li > a:hover,
+.sf-arrows ul li > .sf-with-ul:focus:after,
+.sf-arrows ul li:hover > .sf-with-ul:after,
+.sf-arrows ul .sfHover > .sf-with-ul:after,
+.sf-arrows ul .sf-with-ul:after,
+.sf-arrows > li > .sf-with-ul:focus:after,
+.sf-arrows > li:hover > .sf-with-ul:after,
+.sf-arrows > .sfHover > .sf-with-ul:after,
+.sf-arrows .sf-with-ul:after
+{
+    -webkit-transition:all 100ms linear;
+    -moz-transition:all 100ms linear;
+    -o-transition:all 100ms linear;
+    -ms-transition:all 100ms linear;
+    transition:all 100ms linear;
+}
+
+.too_narrow_fix {
+    left: -12em !important;
+    top: -24px  !important;
+}
+
+
+/*=VERTICAL MENU=*/
+/* adding sf-vertical class in addition to sf-menu creates a vertical menu */
+/* eg. <ul class="sf-menu sf-vertical"> ... */
+.sf-vertical {
+    width: 12em;
+    /* If you want the width of the closed menu to expand to its
+    widest top-level menu item (like its "Supersubs" submenus do),
+    replace the width rule above with the following two rules. */
+
+    /*
+    min-width: 12em;
+    *width: 12em;
+    */
+}
+.sf-vertical ul {
+    left:	100%;
+    top: 0;
+}
+.sf-vertical > li {
+    float: none;
+}
+.sf-vertical li {
+    width: 100%;
+}
+
+/*** alter arrow directions ***/
+.sf-vertical.sf-arrows > li > .sf-with-ul:after {
+    margin-top: -5px;
+    margin-right: -3px;
+    border-color: transparent;
+    border-left-color: #fff; /* edit this to suit design (no rgba in IE8) */
+    border-left-color: rgba(255,255,255,.8);
+}
+.sf-vertical.sf-arrows li > .sf-with-ul:focus:after,
+.sf-vertical.sf-arrows li:hover > .sf-with-ul:after,
+.sf-vertical.sf-arrows .sfHover > .sf-with-ul:after {
+    border-left-color: white;
+}
+
+/*==Nav Active==*/
+
+.nav-active > a{
+    background-color: #f5f5f5;
+    color: #16989d;
+}
+
+.sf-arrows .sf-menu > li.nav-active > a.sf-with-ul:after {
+    content: '\f107';
+    font-family: 'FontAwesome';
+    color: #16989d;
+    top:0px;
+
+
+
+}
+
+
+
+/*====BLOG ==*/
+

@@ -1,0 +1,88 @@
+a:hover,a:focus,a:active,
+.profile-title,
+.feature-item li a:hover,
+.edu-institute li.current a:hover,
+.edu-institute li a:hover,
+.testimonial-pagination a:hover,
+.t-author-pos span,
+.team-next:hover, .team-prev:hover,
+.numeric-stats-wrap .icon-box span i,
+.pricing-table-two .most-popular .plan-pricing,
+.icon-hover .small-boxed-icon i,
+.informative-row .info-component-icon i,
+.timeline-style .info-component-icon i,
+.share-this-site a:hover,
+.latest-tweet a:hover,
+.copyright-info a:hover,
+.blog-post-meta li.post-author a,
+.blog-post-meta li a:hover,
+.blog-post-meta li i,
+.resp-tab-active,
+.resp-arrow:after,
+h2.resp-tab-active span.resp-arrow:after,
+h2.resp-tab-active,
+.sf-menu > li > a:hover,.sf-menu li.sfHover > a,
+.sf-menu ul li.sfHover > a,
+.sf-menu li.current .sf-with-ul:after,
+.sf-arrows > li > .sf-with-ul:focus:after,
+.sf-arrows > li:hover > .sf-with-ul:after,
+.sf-arrows > .sfHover > .sf-with-ul:after,
+.sf-arrows ul li > .sf-with-ul:focus:after,
+.sf-arrows ul li:hover > .sf-with-ul:after,
+.sf-arrows ul .sfHover > .sf-with-ul:after,
+.nav-active > a,
+.sf-arrows .sf-menu > li.nav-active > a.sf-with-ul:after{
+    color: #343642 !important;
+}
+
+.st-btn,
+.btn-view-profile,
+.btn-theme,
+.divider .divider-element.line,
+.job-list-item .job-date:hover,
+.job-ribbon,
+.btn-view-all,
+.pricing-table-two .most-popular .plan-pack,
+.icon-hover:hover .small-boxed-icon i,
+.timeline-style .boxed-icon:hover i,
+.tweet-slide  .owl-page.active span,
+.down-ribb:hover,
+.sticky-ribbon:hover,
+div.down-ribbon,
+.post-blockquote:hover .post-quote,
+#scrollTop:hover,
+.nav-wrapper,
+.sf-menu > li:hover > a:before,
+.cbp-l-caption-buttonLeft:hover,.cbp-l-caption-buttonRight:hover,
+#royal_preloader.royal_preloader_progress .royal_preloader_meter{
+    background-color: #343642;
+}
+
+.btn-post-msg:hover,
+.btn-post-msg:focus{
+    background-color: #343642 !important;
+}
+
+.job-list-item .job-date:hover,
+.pricing-table-two .plan.most-popular,
+.icon-hover:hover .small-boxed-icon i,
+.timeline-style .boxed-icon:hover i,
+.btn-post-msg:hover,
+.btn-post-msg:focus,
+.down-ribb:hover:before,.down-ribb:hover:after,
+.post-divider:after,
+.blog-pagination ul li a:hover,
+.blog-pagination ul li.active a,
+.post-blockquote:hover .post-quote,
+.sidebar .widget-col h4,
+.resp-tab-active,
+.resp-vtabs li.resp-tab-active {
+    border-color: #343642 !important;
+}
+
+div.down-ribbon:before, div.down-ribbon:after {
+    border-color: transparent #343642;
+}
+.job-ribbon:before, .job-ribbon:after {
+   border-color: #343642 transparent !important;
+}
