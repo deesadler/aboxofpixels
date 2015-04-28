@@ -176,7 +176,7 @@ var style= [
     }
 ];
 /*==Google MAP==*/
-function initialize() {
+function googleMapInit() {
     var image = 'images/map-marker.png';
     var dataLat = jq('#gmap').attr('data-map-lat')
     var dataLng = jq('#gmap').attr('data-map-Lng')
@@ -206,8 +206,6 @@ function initialize() {
         title: 'Local Address'
     });
 
-
-
 }
 
-//google.maps.event.addDomListener(window, 'load', initialize);
+google.maps.event.addDomListener(window, 'load', googleMapInit);

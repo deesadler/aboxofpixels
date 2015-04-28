@@ -154,13 +154,9 @@ var jq = jQuery.noConflict();
                             'background-image': 'url(' + secBgImg + ')'
                         });
                     }
-
                     jq(this).children('.map-container').children('.location-map').css({
                         'height': wh + 'px'
                     });
-
-
-
 
                 });
 
