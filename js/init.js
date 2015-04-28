@@ -198,18 +198,13 @@ var jq = jQuery.noConflict();
         jq('.profileSelector').socialProfiles({
             animation: 'chain',
             blur: false,
-            facebook: 'ThemePicasso',
-            twitter: 'ThemePicasso',
-            pinterest: 'ThemePicasso',
-            google: 'ThemePicasso',
-            stumbleupon: 'ThemePicasso',
-            digg: 'ThemePicasso',
-            linkedin: 'ThemePicasso',
-            behance: 'ThemePicasso',
-            reddit: 'ThemePicasso',
-            dribbble: 'ThemePicasso',
-            instagram: 'ThemePicasso',
-            tumblr: 'ThemePicasso'
+            facebook: 'deesadler',
+            twitter: 'deesadler',
+            linkedin: 'www.linkedin.com/in/deesadler',
+            behance: 'deesadler',
+            wordpress: 'macwebdiva',
+            slideshare: 'www.slideshare.net/about/logos',
+            pinterest: 'deesadler'
         });
 
 

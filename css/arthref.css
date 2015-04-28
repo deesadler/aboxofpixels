@@ -117,7 +117,7 @@
 	vertical-align: middle;
 	text-align: left;
 	width: 90%;
-	max-width: 725px;
+	max-width: 500px;
 }
 .arthref .icon-container ul{
 	margin: 0;
@@ -235,6 +235,7 @@
 .arthref .icon-container ul li a.aDribbble i:before,
 .arthref .icon-container ul li a.aDribble i:before{ content: "\f17d"; }
 .arthref .icon-container ul li a.aInstagram i:before{  content: "\f16d";}
+.arthref .icon-container ul li a.aSlideShare i:before{  content: "\f1e7";}
 
 /* */
 .arthref .icon-container ul li a.aApple{ background-color: #272727; }
