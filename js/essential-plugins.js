@@ -13,8 +13,246 @@
  Redesign and Modified by : ThemePicasso
  URI: http://themepicasso.com/
  */
-;(function(e){e.fn.extend({socialProfiles:function(t){function o(t,n,r){var i=e(t);i.each(function(t){e(this).delay(t*n).fadeTo(n,r)})}var n={animation:"launchpad",chainAnimationSpeed:100,blur:false,apple:null,myspace:null,blackberry:null,wikipedia:null,email:null,wordpress:null,deviantart:null,forrst:null,technorati:null,xbox:null,android:null,evernote:null,zerply:null,xing:null,vimeo:null,tumblr:null,facebook:null,digg:null,delicious:null,friendfeed:null,linkedin:null,paypal:null,behance:null,foursquare:null,windows:null,skype:null,twitter:null,posterous:null,lastfm:null,quora:null,youtube:null,pinterest:null,path:null,google:null,flud:null,stumbleupon:null,reddit:null,rss:null,scoutzie:null,blogger:null,grooveshark:null,aim:null,yahoo:null,flickr:null,dribbble:null,instagram:null};var t=e.extend(true,n,t);var r='<div class="arthref arthrefSocialProfiles"><div class="overlay '+t.animation+'"><div class="icon-container"><div class="centered"><ul>';var i="</ul></div></div></div></div>";var s="";if(t.apple){s+='<li><a href="https://itunes.apple.com/'+t.apple+'" target="_blank" rel="nofollow" class="aApple"><i></i></a><span class="social-title">Apple</span></li>'}if(t.myspace){s+='<li><a href="http://www.myspace.com/'+t.myspace+'" target="_blank" rel="nofollow" class="aMySpace"><i></i></a><span class="social-title">MySpace</span></li>'}if(t.blackberry){s+='<li><a href="http://'+t.blackberry+'" target="_blank" rel="nofollow" class="aBlackBerry"><i></i></a><span class="social-title">BlackBerry</span></li>'}if(t.wikipedia){s+='<li><a href="http://en.wikipedia.org/wiki/User:'+t.wikipedia+'" target="_blank" rel="nofollow" class="aWikipedia"><i></i></a><span class="social-title">Wikipedia</span></li>'}if(t.email){s+='<li><a href="mailto:'+t.email+'" class="aEMail"><i></i></a><span class="social-title">E-Mail</span></li>'}if(t.wordpress){s+='<li><a href="http://'+t.wordpress+'.wordpress.com" target="_blank" rel="nofollow" class="aWordpress"><i></i></a><span class="social-title">Wordpress</span></li>'}if(t.deviantart){s+='<li><a href="http://'+t.deviantart+'.deviantart.com" target="_blank" rel="nofollow" class="aDeviantArt"><i></i></a><span class="social-title">DeviantArt</span></li>'}if(t.forrst){s+='<li><a href="http://forrst.com/people/'+t.forrst+'" target="_blank" rel="nofollow" class="aForrst"><i></i></a><span class="social-title">Forrst</span></li>'}if(t.technorati){s+='<li><a href="http://technorati.com/people/technorati/'+t.technorati+'" target="_blank" rel="nofollow" class="aTechnorati"><i></i></a><span class="social-title">Technorati</span></li>'}if(t.xbox){s+='<li><a href="http://'+t.xbox+'" target="_blank" rel="nofollow" class="aXBox"><i></i></a><span class="social-title">XBox</span></li>'}if(t.android){s+='<li><a href="https://play.google.com/store/apps/developer?id='+t.android+'" target="_blank" rel="nofollow" class="aAndroid"><i></i></a><span class="social-title">Android</span></li>'}if(t.evernote){s+='<li><a href="http://'+t.evernote+'" target="_blank" rel="nofollow" class="aEvernote"><i></i></a><span class="social-title">Evernote</span></li>'}if(t.zerply){s+='<li><a href="http://zerply.com/'+t.zerply+'" target="_blank" rel="nofollow" class="aZerply"><i></i></a><span class="social-title">Zerply</span></li>'}if(t.xing){s+='<li><a href="http://www.xing.com/profile/'+t.xing+'" target="_blank" rel="nofollow" class="aXing"><i></i></a><span class="social-title">Xing</span></li>'}if(t.vimeo){s+='<li><a href="http://vimeo.com/'+t.vimeo+'" target="_blank" rel="nofollow" class="aVimeo"><i></i></a><span class="social-title">Vimeo</span></li>'}if(t.tumblr){s+='<li><a href="http://'+t.tumblr+'.tumblr.com" target="_blank" rel="nofollow" class="aTumblr"><i></i></a><span class="social-title">Tumblr</span></li>'}if(t.facebook){s+='<li><a href="http://facebook.com/'+t.facebook+'" target="_blank" rel="nofollow" class="aFacebook"><i></i></a><span class="social-title">Facebook</span></li>'}if(t.digg){s+='<li><a href="http://digg.com/users/'+t.digg+'" target="_blank" rel="nofollow" class="aDigg"><i></i></a><span class="social-title">Digg</span></li>'}if(t.delicious){s+='<li><a href="http://delicious.com/'+t.delicious+'" target="_blank" rel="nofollow" class="aDelicious"><i></i></a><span class="social-title">Delicious</span></li>'}if(t.friendfeed){s+='<li><a href="http://friendfeed.com/'+t.friendfeed+'" target="_blank" rel="nofollow" class="aFriendFeed"><i></i></a><span class="social-title">FriendFeed</span></li>'}if(t.linkedin){s+='<li><a href="http://'+t.linkedin+'" target="_blank" rel="nofollow" class="aLinkedIn"><i></i></a><span class="social-title">LinkedIn</span></li>'}if(t.paypal){s+='<li><a href="https://'+t.paypal+'" target="_blank" rel="nofollow" class="aPaypal"><i></i></a><span class="social-title">Paypal</span></li>'}if(t.behance){s+='<li><a href="http://www.behance.net/'+t.behance+'" target="_blank" rel="nofollow" class="aBehance"><i></i></a><span class="social-title">Behance</span></li>'}if(t.foursquare){s+='<li><a href="https://foursquare.com/'+t.foursquare+'" target="_blank" rel="nofollow" class="aFoursquare"><i></i></a><span class="social-title">Foursquare</span></li>'}if(t.windows){s+='<li><a href="http://'+t.windows+'" target="_blank" rel="nofollow" class="aWindows"><i></i></a><span class="social-title">Windows</span></li>'}if(t.skype){s+='<li><a href="skype:'+t.skype+'?add" target="_blank" rel="nofollow" class="aSkype"><i></i></a><span class="social-title">Skype</span></li>'}if(t.twitter){s+='<li><a href="https://twitter.com/'+t.twitter+'" target="_blank" rel="nofollow" class="aTwitter"><i></i></a><span class="social-title">Twitter</span></li>'}if(t.posterous){s+='<li><a href="http://'+t.posterous+'.posterous.com" target="_blank" rel="nofollow" class="aPosterous"><i></i></a><span class="social-title">Posterous</span></li>'}if(t.lastfm){s+='<li><a href="http://www.lastfm.com.tr/user/'+t.lastfm+'" target="_blank" rel="nofollow" class="aLastFm"><i></i></a><span class="social-title">Last.fm</span></li>'}if(t.quora){s+='<li><a href="http://www.quora.com/'+t.quora+'" target="_blank" rel="nofollow" class="aQuora"><i></i></a><span class="social-title">Quora</span></li>'}if(t.youtube){s+='<li><a href="http://youtube.com/user/'+t.youtube+'" target="_blank" rel="nofollow" class="aYouTube"><i></i></a><span class="social-title">YouTube</span></li>'}if(t.pinterest){s+='<li><a href="http://pinterest.com/'+t.pinterest+'" target="_blank" rel="nofollow" class="aPinterest"><i></i></a><span class="social-title">Pinterest</span></li>'}if(t.path){s+='<li><a href="http://path.com/'+t.path+'" target="_blank" rel="nofollow" class="aPath"><i></i></a><span class="social-title">Path</span></li>'}if(t.google){s+='<li><a href="https://plus.google.com/'+t.google+'" target="_blank" rel="nofollow" class="aGooglePlus"><i></i></a><span class="social-title">Google+</span></li>'}if(t.flud){s+='<li><a href="http://'+t.flud+'" target="_blank" rel="nofollow" class="aFlud"><i></i></a><span class="social-title">Flud</span></li>'}if(t.stumbleupon){s+='<li><a href="http://www.stumbleupon.com/stumbler/'+t.stumbleupon+'" target="_blank" rel="nofollow" class="aStumbleUpon"><i></i></a><span class="social-title">StumbleUpon</span></li>'}if(t.reddit){s+='<li><a href="http://www.reddit.com/user/'+t.reddit+'" target="_blank" rel="nofollow" class="aReddit"><i></i></a><span class="social-title">Reddit</span></li>'}if(t.rss){s+='<li><a href="http://feeds.feedburner.com/'+t.rss+'" target="_blank" rel="nofollow" class="aRSS"><i></i></a><span class="social-title">RSS</span></li>'}if(t.scoutzie){s+='<li><a href="http://scoutzie.com/'+t.scoutzie+'" target="_blank" rel="nofollow" class="aScoutzie"><i></i></a><span class="social-title">Scoutzie</span></li>'}if(t.blogger){s+='<li><a href="http://'+t.blogger+'.blogspot.com" target="_blank" rel="nofollow" class="aBlogger"><i></i></a><span class="social-title">Blogger</span></li>'}if(t.grooveshark){s+='<li><a href="http://grooveshark.com/#!/'+t.grooveshark+'" target="_blank" rel="nofollow" class="aGrooveshark"><i></i></a><span class="social-title">Grooveshark</span></li>'}if(t.aim){s+='<li><a href="http://'+t.aim+'" target="_blank" rel="nofollow" class="aAIM"><i></i></a><span class="social-title">AIM</span></li>'}if(t.yahoo){s+='<li><a href="http://'+t.yahoo+'" target="_blank" rel="nofollow" class="aYahoo"><i></i></a><span class="social-title">Yahoo</span></li>'}if(t.flickr){s+='<li><a href="http://flickr.com/'+t.flickr+'" target="_blank" rel="nofollow" class="aFlickr"><i></i></a><span class="social-title">Flickr</span></li>'}if(t.dribbble){s+='<li><a href="http://dribbble.com/'+t.dribbble+'" target="_blank" rel="nofollow" class="aDribbble"><i></i></a><span class="social-title">Dribbble</span></li>'}if(t.instagram){s+='<li><a href="http://instagram.com/'+t.instagram+'" target="_blank" rel="nofollow" class="aInstagram"><i></i></a><span class="social-title">Instagram</span></li>'}e("body").append(r+s+i);return this.each(function(){var n=t;var r=e(this);var i=e("body");var s=e(".arthrefSocialProfiles").find(".overlay");var u=s.find("ul");var a=u.find("li");if(n.blur)s.addClass("opaque");r.click(function(){if(n.blur)i.children().not(".arthref, script").addClass("blurred");s.css("display","block");setTimeout(function(){s.addClass("active");u.addClass("active");if(n.animation=="chain")o(a,n.chainAnimationSpeed,"1")},0)});e(document).on("click touchstart",".arthrefSocialProfiles .overlay",function(e){if(n.blur)i.children().removeClass("blurred");s.removeClass("active");u.removeClass("active");setTimeout(function(){s.css("display","none")},300)});a.click(function(e){e.stopPropagation()})});}})})(jQuery)
-
+;
+(function(e) {
+    e.fn.extend({
+        socialProfiles: function(t) {
+            function o(t, n, r) {
+                var i = e(t);
+                i.each(function(t) {
+                    e(this).delay(t * n).fadeTo(n, r)
+                })
+            }
+            var n = {
+                animation: "launchpad",
+                chainAnimationSpeed: 100,
+                blur: false,
+                apple: null,
+                myspace: null,
+                blackberry: null,
+                wikipedia: null,
+                email: null,
+                wordpress: null,
+                deviantart: null,
+                forrst: null,
+                technorati: null,
+                xbox: null,
+                android: null,
+                evernote: null,
+                zerply: null,
+                xing: null,
+                vimeo: null,
+                tumblr: null,
+                facebook: null,
+                digg: null,
+                delicious: null,
+                friendfeed: null,
+                linkedin: null,
+                paypal: null,
+                behance: null,
+                foursquare: null,
+                windows: null,
+                skype: null,
+                twitter: null,
+                posterous: null,
+                lastfm: null,
+                quora: null,
+                youtube: null,
+                pinterest: null,
+                path: null,
+                google: null,
+                flud: null,
+                stumbleupon: null,
+                reddit: null,
+                rss: null,
+                scoutzie: null,
+                blogger: null,
+                grooveshark: null,
+                aim: null,
+                yahoo: null,
+                flickr: null,
+                dribbble: null,
+                instagram: null,
+                slideshare: null 
+            };
+            var t = e.extend(true, n, t);
+            var r = '<div class="arthref arthrefSocialProfiles"><div class="overlay ' + t.animation + '"><div class="icon-container"><div class="centered"><ul>';
+            var i = "</ul></div></div></div></div>";
+            var s = "";
+            if (t.apple) {
+                s += '<li><a href="https://itunes.apple.com/' + t.apple + '" target="_blank" rel="nofollow" class="aApple"><i></i></a><span class="social-title">Apple</span></li>'
+            }
+            if (t.myspace) {
+                s += '<li><a href="http://www.myspace.com/' + t.myspace + '" target="_blank" rel="nofollow" class="aMySpace"><i></i></a><span class="social-title">MySpace</span></li>'
+            }
+            if (t.slideshare) {
+                s += '<li><a href="http://www.slideshare.com/' + t.slideshare + '" target="_blank" rel="nofollow" class="aSlideShare"><i></i></a><span class="social-title">SlideShare</span></li>'
+            }
+            if (t.blackberry) {
+                s += '<li><a href="http://' + t.blackberry + '" target="_blank" rel="nofollow" class="aBlackBerry"><i></i></a><span class="social-title">BlackBerry</span></li>'
+            }
+            if (t.wikipedia) {
+                s += '<li><a href="http://en.wikipedia.org/wiki/User:' + t.wikipedia + '" target="_blank" rel="nofollow" class="aWikipedia"><i></i></a><span class="social-title">Wikipedia</span></li>'
+            }
+            if (t.email) {
+                s += '<li><a href="mailto:' + t.email + '" class="aEMail"><i></i></a><span class="social-title">E-Mail</span></li>'
+            }
+            if (t.wordpress) {
+                s += '<li><a href="http://' + t.wordpress + '.wordpress.com" target="_blank" rel="nofollow" class="aWordpress"><i></i></a><span class="social-title">Wordpress</span></li>'
+            }
+            if (t.deviantart) {
+                s += '<li><a href="http://' + t.deviantart + '.deviantart.com" target="_blank" rel="nofollow" class="aDeviantArt"><i></i></a><span class="social-title">DeviantArt</span></li>'
+            }
+            if (t.forrst) {
+                s += '<li><a href="http://forrst.com/people/' + t.forrst + '" target="_blank" rel="nofollow" class="aForrst"><i></i></a><span class="social-title">Forrst</span></li>'
+            }
+            if (t.technorati) {
+                s += '<li><a href="http://technorati.com/people/technorati/' + t.technorati + '" target="_blank" rel="nofollow" class="aTechnorati"><i></i></a><span class="social-title">Technorati</span></li>'
+            }
+            if (t.xbox) {
+                s += '<li><a href="http://' + t.xbox + '" target="_blank" rel="nofollow" class="aXBox"><i></i></a><span class="social-title">XBox</span></li>'
+            }
+            if (t.android) {
+                s += '<li><a href="https://play.google.com/store/apps/developer?id=' + t.android + '" target="_blank" rel="nofollow" class="aAndroid"><i></i></a><span class="social-title">Android</span></li>'
+            }
+            if (t.evernote) {
+                s += '<li><a href="http://' + t.evernote + '" target="_blank" rel="nofollow" class="aEvernote"><i></i></a><span class="social-title">Evernote</span></li>'
+            }
+            if (t.zerply) {
+                s += '<li><a href="http://zerply.com/' + t.zerply + '" target="_blank" rel="nofollow" class="aZerply"><i></i></a><span class="social-title">Zerply</span></li>'
+            }
+            if (t.xing) {
+                s += '<li><a href="http://www.xing.com/profile/' + t.xing + '" target="_blank" rel="nofollow" class="aXing"><i></i></a><span class="social-title">Xing</span></li>'
+            }
+            if (t.vimeo) {
+                s += '<li><a href="http://vimeo.com/' + t.vimeo + '" target="_blank" rel="nofollow" class="aVimeo"><i></i></a><span class="social-title">Vimeo</span></li>'
+            }
+            if (t.tumblr) {
+                s += '<li><a href="http://' + t.tumblr + '.tumblr.com" target="_blank" rel="nofollow" class="aTumblr"><i></i></a><span class="social-title">Tumblr</span></li>'
+            }
+            if (t.facebook) {
+                s += '<li><a href="http://facebook.com/' + t.facebook + '" target="_blank" rel="nofollow" class="aFacebook"><i></i></a><span class="social-title">Facebook</span></li>'
+            }
+            if (t.digg) {
+                s += '<li><a href="http://digg.com/users/' + t.digg + '" target="_blank" rel="nofollow" class="aDigg"><i></i></a><span class="social-title">Digg</span></li>'
+            }
+            if (t.delicious) {
+                s += '<li><a href="http://delicious.com/' + t.delicious + '" target="_blank" rel="nofollow" class="aDelicious"><i></i></a><span class="social-title">Delicious</span></li>'
+            }
+            if (t.friendfeed) {
+                s += '<li><a href="http://friendfeed.com/' + t.friendfeed + '" target="_blank" rel="nofollow" class="aFriendFeed"><i></i></a><span class="social-title">FriendFeed</span></li>'
+            }
+            if (t.linkedin) {
+                s += '<li><a href="http://' + t.linkedin + '" target="_blank" rel="nofollow" class="aLinkedIn"><i></i></a><span class="social-title">LinkedIn</span></li>'
+            }
+            if (t.paypal) {
+                s += '<li><a href="https://' + t.paypal + '" target="_blank" rel="nofollow" class="aPaypal"><i></i></a><span class="social-title">Paypal</span></li>'
+            }
+            if (t.behance) {
+                s += '<li><a href="http://www.behance.net/' + t.behance + '" target="_blank" rel="nofollow" class="aBehance"><i></i></a><span class="social-title">Behance</span></li>'
+            }
+            if (t.foursquare) {
+                s += '<li><a href="https://foursquare.com/' + t.foursquare + '" target="_blank" rel="nofollow" class="aFoursquare"><i></i></a><span class="social-title">Foursquare</span></li>'
+            }
+            if (t.windows) {
+                s += '<li><a href="http://' + t.windows + '" target="_blank" rel="nofollow" class="aWindows"><i></i></a><span class="social-title">Windows</span></li>'
+            }
+            if (t.skype) {
+                s += '<li><a href="skype:' + t.skype + '?add" target="_blank" rel="nofollow" class="aSkype"><i></i></a><span class="social-title">Skype</span></li>'
+            }
+            if (t.twitter) {
+                s += '<li><a href="https://twitter.com/' + t.twitter + '" target="_blank" rel="nofollow" class="aTwitter"><i></i></a><span class="social-title">Twitter</span></li>'
+            }
+            if (t.posterous) {
+                s += '<li><a href="http://' + t.posterous + '.posterous.com" target="_blank" rel="nofollow" class="aPosterous"><i></i></a><span class="social-title">Posterous</span></li>'
+            }
+            if (t.lastfm) {
+                s += '<li><a href="http://www.lastfm.com.tr/user/' + t.lastfm + '" target="_blank" rel="nofollow" class="aLastFm"><i></i></a><span class="social-title">Last.fm</span></li>'
+            }
+            if (t.quora) {
+                s += '<li><a href="http://www.quora.com/' + t.quora + '" target="_blank" rel="nofollow" class="aQuora"><i></i></a><span class="social-title">Quora</span></li>'
+            }
+            if (t.youtube) {
+                s += '<li><a href="http://youtube.com/user/' + t.youtube + '" target="_blank" rel="nofollow" class="aYouTube"><i></i></a><span class="social-title">YouTube</span></li>'
+            }
+            if (t.pinterest) {
+                s += '<li><a href="http://pinterest.com/' + t.pinterest + '" target="_blank" rel="nofollow" class="aPinterest"><i></i></a><span class="social-title">Pinterest</span></li>'
+            }
+            if (t.path) {
+                s += '<li><a href="http://path.com/' + t.path + '" target="_blank" rel="nofollow" class="aPath"><i></i></a><span class="social-title">Path</span></li>'
+            }
+            if (t.google) {
+                s += '<li><a href="https://plus.google.com/' + t.google + '" target="_blank" rel="nofollow" class="aGooglePlus"><i></i></a><span class="social-title">Google+</span></li>'
+            }
+            if (t.flud) {
+                s += '<li><a href="http://' + t.flud + '" target="_blank" rel="nofollow" class="aFlud"><i></i></a><span class="social-title">Flud</span></li>'
+            }
+            if (t.stumbleupon) {
+                s += '<li><a href="http://www.stumbleupon.com/stumbler/' + t.stumbleupon + '" target="_blank" rel="nofollow" class="aStumbleUpon"><i></i></a><span class="social-title">StumbleUpon</span></li>'
+            }
+            if (t.reddit) {
+                s += '<li><a href="http://www.reddit.com/user/' + t.reddit + '" target="_blank" rel="nofollow" class="aReddit"><i></i></a><span class="social-title">Reddit</span></li>'
+            }
+            if (t.rss) {
+                s += '<li><a href="http://feeds.feedburner.com/' + t.rss + '" target="_blank" rel="nofollow" class="aRSS"><i></i></a><span class="social-title">RSS</span></li>'
+            }
+            if (t.scoutzie) {
+                s += '<li><a href="http://scoutzie.com/' + t.scoutzie + '" target="_blank" rel="nofollow" class="aScoutzie"><i></i></a><span class="social-title">Scoutzie</span></li>'
+            }
+            if (t.blogger) {
+                s += '<li><a href="http://' + t.blogger + '.blogspot.com" target="_blank" rel="nofollow" class="aBlogger"><i></i></a><span class="social-title">Blogger</span></li>'
+            }
+            if (t.grooveshark) {
+                s += '<li><a href="http://grooveshark.com/#!/' + t.grooveshark + '" target="_blank" rel="nofollow" class="aGrooveshark"><i></i></a><span class="social-title">Grooveshark</span></li>'
+            }
+            if (t.aim) {
+                s += '<li><a href="http://' + t.aim + '" target="_blank" rel="nofollow" class="aAIM"><i></i></a><span class="social-title">AIM</span></li>'
+            }
+            if (t.yahoo) {
+                s += '<li><a href="http://' + t.yahoo + '" target="_blank" rel="nofollow" class="aYahoo"><i></i></a><span class="social-title">Yahoo</span></li>'
+            }
+            if (t.flickr) {
+                s += '<li><a href="http://flickr.com/' + t.flickr + '" target="_blank" rel="nofollow" class="aFlickr"><i></i></a><span class="social-title">Flickr</span></li>'
+            }
+            if (t.dribbble) {
+                s += '<li><a href="http://dribbble.com/' + t.dribbble + '" target="_blank" rel="nofollow" class="aDribbble"><i></i></a><span class="social-title">Dribbble</span></li>'
+            }
+            if (t.instagram) {
+                s += '<li><a href="http://instagram.com/' + t.instagram + '" target="_blank" rel="nofollow" class="aInstagram"><i></i></a><span class="social-title">Instagram</span></li>'
+            }
+            e("body").append(r + s + i);
+            return this.each(function() {
+                var n = t;
+                var r = e(this);
+                var i = e("body");
+                var s = e(".arthrefSocialProfiles").find(".overlay");
+                var u = s.find("ul");
+                var a = u.find("li");
+                if (n.blur) s.addClass("opaque");
+                r.click(function() {
+                    if (n.blur) i.children().not(".arthref, script").addClass("blurred");
+                    s.css("display", "block");
+                    setTimeout(function() {
+                        s.addClass("active");
+                        u.addClass("active");
+                        if (n.animation == "chain") o(a, n.chainAnimationSpeed, "1")
+                    }, 0)
+                });
+                e(document).on("click touchstart", ".arthrefSocialProfiles .overlay", function(e) {
+                    if (n.blur) i.children().removeClass("blurred");
+                    s.removeClass("active");
+                    u.removeClass("active");
+                    setTimeout(function() {
+                        s.css("display", "none")
+                    }, 300)
+                });
+                a.click(function(e) {
+                    e.stopPropagation()
+                })
+            });
+        }
+    })
+})(jQuery)
     /**
      * jQuery appear plugin
      *
